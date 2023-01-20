@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">pz2-4</string>
+    <string name="type_of_coffee">Type of coffee</string>
+    <string name="cream">Cream</string>
+    <string name="number_of_cups">Number of cups</string>
+    <string name="sugar">Sugar</string>
+    <string name="calculate_price">Calculate price</string>
+    <string name="price">Price</string>
+    <string name="latte_300">latte - 300 rub</string>
+    <string name="mocha_300">mocha - 300 rub</string>
+    <string name="americano_200">americano - 200 rub</string>
+    <string name="espresso_200">espresso - 200 rub</string>
+    <string name="number">quantity</string>
+
+
+    <string-array name="coffeeNames">
+        <item>latte</item>
+        <item>mocha</item>
+        <item>americano</item>
+        <item>espresso</item>
+    </string-array>
+</resources>

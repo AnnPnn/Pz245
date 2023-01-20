@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b19576"
+    tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="223dp"
+            android:layout_height="163dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="180dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+                <EditText
+                    android:id="@+id/etNumberOfCups"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/number"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    app:layout_constraintBottom_toTopOf="@+id/checkBoxSugar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.562"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.903"
+                    tools:ignore="MissingConstraints" />
+
+                <Spinner
+                    android:id="@+id/spTypeOfCoffe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:entries="@array/coffeeNames"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:scrollbarStyle="outsideOverlay"
+                    app:layout_constraintBottom_toTopOf="@+id/checkBoxSugar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.562"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.903"
+                    tools:ignore="MissingConstraints" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxCream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="114dp"
+                    tools:layout_editor_absoluteY="256dp" />
+
+                <Switch
+                    android:id="@+id/swSugar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="187dp"
+            android:layout_height="181dp"
+            android:layout_marginStart="4dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/number_of_cups"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="7dp"
+                    tools:layout_editor_absoluteY="153dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/type_of_coffee"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="341dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/cream"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="276dp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/sugar"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="211dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMenu"
+            android:layout_width="249dp"
+            android:layout_height="129dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.074"
+            tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="start"
+                    android:text="@string/latte_300"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/mocha_300"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/americano_200"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/espresso_200"
+                    android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btCalculatePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="216dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="right|center"
+            android:text="@string/calculate_price"
+            android:textColor="#FFCC80"
+            app:backgroundTint="#006600"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            tools:ignore="MissingConstraints,RtlHardcoded" />
+
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="142dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="right|center"
+            android:minHeight="48dp"
+            android:text="@string/price"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btCalculatePrice"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints,RtlHardcoded" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clipart_coffee_caffeine_12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imMenu"
+            android:layout_width="141dp"
+            android:layout_height="144dp"
+            android:src="@drawable/_menu"
+            app:tint="#006600"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="26dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
